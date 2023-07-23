@@ -1,0 +1,22 @@
+.row{
+    margin-left: 40px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.columun{
+    padding: 5;
+    flex: 25%;
+    max-width: 25%;
+    
+}
+.columun img{
+    margin-top: 10px;
+}
+@media(max-width:1700px){
+    .columun{
+        flex: 50%;
+        max-width: 380px;
+        padding: 5;
+    }
+}

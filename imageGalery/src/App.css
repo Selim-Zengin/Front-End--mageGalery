@@ -1,0 +1,10 @@
+.textCss{
+  background-color:red;
+  color: white;
+  
+}
+.textCss:hover{
+  background-color: white;
+  color: red;
+  
+}
