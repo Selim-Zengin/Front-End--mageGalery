@@ -3,6 +3,8 @@ import { Manzara } from './Manzara';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Anasayfa } from './Anasayfa';
 import { Doga } from './Doga';
+import { Hayvan } from './Hayvan';
+import { Sehir } from './Sehir';
 
 function App() {
   
@@ -31,12 +33,12 @@ function App() {
           <a className="nav-link textCss" href="/Doga"><h4>Doğa</h4></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link textCss" href="#"><h4>Hayvan</h4></a>
+          <a className="nav-link textCss" href="/Hayvan"><h4>Hayvan</h4></a>
         </li>
      
      
         <li className="nav-item">
-          <a className="nav-link textCss" href='#'><h4>Hayvan</h4></a>
+          <a className="nav-link textCss" href='/Sehir'><h4>Şehir</h4></a>
         </li>
       
       </ul>
@@ -47,8 +49,15 @@ function App() {
   <Route path='/' element={<Anasayfa/>}/>
 <Route path="/Manzara" element={<Manzara/>} />
 <Route path='/Doga' element={<Doga/>}/>
+<Route path='/Hayvan' element={<Hayvan/>} />
+<Route path='/Sehir' element={<Sehir/>} />
 </Routes>
 </Router>
+
+<div style={{width:"100%",backgroundColor:"red",height:70}}>
+  <br />
+<h4 style={{color:'white',textAlign:'center'}} >İmage Galery</h4>
+</div>
     </>
   )
 }
